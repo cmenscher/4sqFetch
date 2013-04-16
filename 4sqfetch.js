@@ -7,7 +7,8 @@ var foursquareFetch = {
     },
 
     saveJSON: function() {
-        var jsonData = this.checkins;
+        var data = this.checkins;
+        var jsonData = JSON.stringify(data);
         if(window.Blob && (window.createObjectURL || window.webkitURL.createObjectURL)) {
                     var blob = new Blob([jsonData], {type: "application/octet-stream"}),
                         saveas = document.createElement("iframe");
