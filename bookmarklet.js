@@ -9,7 +9,7 @@ var foursquareFetch = {
     saveJSON: function() {
         var data = this.checkins;
         var jsonData = JSON.stringify(data);
-        console.log(jsonData);
+        //console.log(jsonData);
 
         if (window.Blob && (window.createObjectURL || window.webkitURL.createObjectURL)) {
             var blob = new Blob([jsonData], {
