@@ -1,4 +1,4 @@
-var 4sqFetch = {
+var foursquareFetch = {
     checkins: {},
 
     getData: function(callback) {
@@ -33,4 +33,4 @@ var 4sqFetch = {
         });
     },
 }
-4sqFetch.start();
+foursquareFetch.start();
